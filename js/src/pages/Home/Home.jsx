@@ -60,14 +60,16 @@ const NickNameInfo = () => {
 };
 const FavoriteInfo = () => {
   return (
-    <div className="space-y-4">
-      <p>
-        특별한 뜻이 있는 것은 아니고, 이전에 유튜브에서 특이한 이름의 색깔
-        이름을 모아둔 영상을 보다가 '아마란스'라는 색깔의 어감이 좋아서 Github
-        닉네임으로 삼게 되었습니다. 그 닉네임을 그대로 우테코 닉네임으로
-        가져왔습니다. 아마란스는 색의 이름이기도 하고, 식물의 이름이기도 합니다.
-      </p>
-    </div>
+    <>
+      게임, 특히 모바일 게임, 인디 게임을 즐겨 합니다. 여유가 있을 땐 그림을
+      그리면서 시간을 보내곤 합니다.
+      <br />
+      컴공과로 진로를 결정하기 전 꿈이 천체 물리학자였어서, 밤하늘 보는 것도
+      좋아합니다.
+      <br />
+      나에게 맞는 취미를 발굴하는 것도 중요한 자기계발이라고 생각해서, 옛날에
+      프랑스 자수, 피아노, 킥복싱 정도를 얕게 찍먹해본 적이 있습니다.
+    </>
   );
 };
 const tmis = [
@@ -75,8 +77,7 @@ const tmis = [
   {
     id: 2,
     title: "취미 & 좋아하는 것",
-    content:
-      "그림 그리기를 취미로 가지고 있습니다. 밤하늘 보는 것도 좋아합니다.",
+    content: <FavoriteInfo />,
   },
 ];
 const Home = () => {
@@ -140,11 +141,13 @@ const Home = () => {
             </div>
             <div className="mx-auto mb-4 w-[150px] border-b"></div>
             <div className="space-y-4">
-              <div className="text-pointColor">아마란스</div>
+              <div className="text-pointColor">이름 : 아마란스</div>
               <div className="">거주지 : 도봉구</div>
               <div className="">고향 : 광주광역시, 부산광역시</div>
-              <div className="">좋아하는 것</div>
-              <div className="">한줄 소개</div>
+              <div className="">
+                한 줄 소개 : 프론트 개발을 하다 백엔드 개발에 대한 심층적인
+                공부를 하고싶어 우테코에 들어오게 되었습니다.
+              </div>
             </div>
           </div>
           <div name="TMI" className="">

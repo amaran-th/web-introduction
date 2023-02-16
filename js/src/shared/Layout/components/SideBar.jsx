@@ -7,8 +7,8 @@ import Movie from "../../../pages/Movie/Movie";
 import GuestBook from "../../../pages/GuestBook/GuestBook";
 
 const navigation = [
-  { id: 0, name: "홈", icon: <VscHome />, content: <Home /> },
-  { id: 1, name: "영화 소개", icon: <BiCameraMovie />, content: <Movie /> },
+  { id: 0, name: "자기소개", icon: <VscHome />, content: <Home /> },
+  { id: 1, name: "영화 Top5", icon: <BiCameraMovie />, content: <Movie /> },
   { id: 2, name: "방명록", icon: <VscBook />, content: <GuestBook /> },
 ];
 
