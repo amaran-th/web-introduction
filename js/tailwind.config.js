@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -8,7 +10,8 @@ module.exports = {
         middleBlack: "#18181C",
         subBlack: "#26262C",
         pointColor: "#E6274F",
-        subGray: "#575E69",
+        gray: "#C3C3C3",
+        darkGray: "#575E69",
       },
       fontSize: {
         h1: "28pt",
@@ -19,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+});

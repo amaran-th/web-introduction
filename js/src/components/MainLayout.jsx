@@ -28,8 +28,8 @@ const MainLayout = () => {
               }}
               className={
                 (item.id == current
-                  ? " bg-subGray text-gray-900"
-                  : " text-gray-600 hover:bg-subGray hover:text-gray-900") +
+                  ? " text-gray-900 bg-darkGray"
+                  : " text-gray-600 hover:text-gray-900 hover:bg-darkGray") +
                 " flex w-full items-center rounded-md px-3 py-2 text-sm font-medium"
               }
               aria-current={item.current ? "page" : undefined}
