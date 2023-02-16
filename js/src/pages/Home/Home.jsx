@@ -138,7 +138,7 @@ const Home = () => {
             <div className="w-full flex-col items-center text-center text-h3">
               About Me
             </div>
-            <div className="mx-auto mb-4 w-[100px] border-b"></div>
+            <div className="mx-auto mb-4 w-[150px] border-b"></div>
             <div className="space-y-4">
               <div className="text-pointColor">아마란스</div>
               <div className="">거주지 : 도봉구</div>
@@ -151,7 +151,7 @@ const Home = () => {
             <div className="w-full flex-col items-center text-center text-h3">
               TMI
             </div>
-            <div className="mx-auto mb-4 w-[150px] border-b"></div>
+            <div className="mx-auto mb-4 w-[100px] border-b"></div>
             <div className="mx-auto max-w-xl">
               {tmis.map((tmi) => (
                 <Accordion
