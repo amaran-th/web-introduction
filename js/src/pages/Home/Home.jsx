@@ -38,7 +38,7 @@ const NickNameInfo = () => {
         >
           <img
             className="mx-auto h-80"
-            src={require("../assets/images/amaranth.jpg")}
+            src={require("../../assets/images/amaranth.jpg")}
           />{" "}
         </Link>
         <Link
@@ -48,7 +48,7 @@ const NickNameInfo = () => {
         >
           <img
             className="mx-auto h-80"
-            src={require("../assets/images/amaranthPlant.png")}
+            src={require("../../assets/images/amaranthPlant.png")}
           />
         </Link>
       </div>
@@ -124,7 +124,7 @@ const Home = () => {
                   >
                     <IconButton
                       variant="text"
-                      className="!rounded-md  !text-white "
+                      className="!rounded-md  !text-white hover:!text-subColor "
                     >
                       {link.icon}
                     </IconButton>
@@ -161,7 +161,12 @@ const Home = () => {
                 >
                   <AccordionHeader
                     onClick={() => handleOpen(tmi.id)}
-                    className="text-white hover:text-white"
+                    className={
+                      "text-white hover:text-white" +
+                      (open === tmi.id
+                        ? " border-subColor text-subColor hover:text-subColor"
+                        : "")
+                    }
                   >
                     {tmi.title}
                   </AccordionHeader>

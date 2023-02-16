@@ -10,6 +10,7 @@ module.exports = withMT({
         middleBlack: "#18181C",
         subBlack: "#26262C",
         pointColor: "#E6274F",
+        subColor:"#f5576d",
         gray: "#C3C3C3",
         darkGray: "#575E69",
       },

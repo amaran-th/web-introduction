@@ -1,9 +1,9 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "./components/MainLayout";
+import MainLayout from "./shared/Layout/MainLayout";
 
 //local
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
