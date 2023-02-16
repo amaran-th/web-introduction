@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Input, Checkbox } from "@material-tailwind/react";
+import { VscTriangleRight } from "react-icons/vsc";
 const movies = [
   {
     id: 1,
@@ -115,16 +116,22 @@ const GuestBook = () => {
       <form name="content" className="space-y-4">
         <Input
           variant="static"
+          color="red"
           label="이름"
           placeholder="이름을 입력하세요"
           onBlur={(e) => setName(e.target.value)}
+          className="!text-white"
         />
         <div>
-          <p className="">당신의 취향인 영화는 무엇인가요?</p>
+          <p className="flex items-center">
+            <VscTriangleRight />
+            당신의 취향인 영화는 무엇인가요?
+          </p>
           <div className="items-center">
             {movies.map((movie) => (
               <Checkbox
                 label={movie.name}
+                color="red"
                 onChange={(e) => {
                   if (e.target.checked) setMovieCount(movieCount + 1);
                   else setMovieCount(movieCount - 1);

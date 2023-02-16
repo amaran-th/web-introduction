@@ -9,6 +9,8 @@ import {
 import { VscGithubInverted } from "react-icons/vsc";
 import { SiBloglovin } from "react-icons/si";
 
+import Badge from "./components/Badge";
+
 const links = [
   {
     name: "Github",
@@ -140,13 +142,23 @@ const Home = () => {
               About Me
             </div>
             <div className="mx-auto mb-4 w-[150px] border-b"></div>
-            <div className="space-y-4">
-              <div className="text-pointColor">이름 : 아마란스</div>
-              <div className="">거주지 : 도봉구</div>
-              <div className="">고향 : 광주광역시, 부산광역시</div>
+            <div className="mx-auto max-w-xl space-y-4">
+              <div className="">이름 : 아마란스(송세연)</div>
+              <div className="flex space-x-2">
+                <span>현 거주지 : </span>
+                <span className="flex space-x-2">
+                  <Badge>서울특별시</Badge> <span>></span> <Badge>도봉구</Badge>
+                </span>
+              </div>
+              <div className="flex space-x-2">
+                <span>고향 : </span>
+                <span className="flex space-x-2">
+                  <Badge>광주광역시</Badge>
+                  <Badge>부산광역시</Badge>
+                </span>
+              </div>
               <div className="">
-                한 줄 소개 : 프론트 개발을 하다 백엔드 개발에 대한 심층적인
-                공부를 하고싶어 우테코에 들어오게 되었습니다.
+                한마디 : 안녕하세요~ 아마란스입니다! 우리 재밌게 코딩해봐요!
               </div>
             </div>
           </div>
